@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzify-Free Music anywhere!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+    <div class = "sidebar">
+        <div class="logo">
+          <a href = "#">
+            <img src = "images/Brand Logo.png" alt = "Logo">
+          </a>
+        </div>
+    
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href = "#">
+                <span  style="color: white;font-size: 20px;"class="fa fa-home"></span>
+                <span style="color: white;font-size: 17px;">Home</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href = "search.html">
+                <span class="fa fa-search"></span>
+                <span>Search</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href = "#">
+                <span class="fa fas fa-book"></span>
+                <span>Your Library</span>
+              </a>
+            </li>
+    
+          </ul>
+        </div>
+    
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href = "#">
+                <span class="fa fas fa-plus-square"></span>
+                <span>Create Playlist</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href = "likedsongs.html">
+                <span class="fa fas fa-heart"></span>
+                <span>Liked Songs</span>
+              </a>
+            </li>
+    
+          </ul>
+        </div>
+    
+          <div class="policies">
+            <ul>
+              <li>
+                <a href = "#">Cookies</a>
+              </li>
+    
+              <li>
+                <a href = "#">Privacy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="main-container">
+          <div class="topbar">
+            <div class="prev-next-buttons">
+              <button type="button" class="fa fas fa-chevron-left"></button>
+              <button type="button" class="fa fas fa-chevron-right"></button>
+            </div>
+    
+            <div class="navbar">
+              <ul>
+                <li>
+                  <a href="#">Premium</a>
+                </li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+                <li>
+                  <a href="#">Download</a>
+                </li>
+            </div>
+          </div>
+
+        <div class="Muzify-playlists">
+            <h2>Muzify Playlists</h2>
+            <div class="list">
+                <div class="item" data-audio-id="audio1">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202309/miss-shetty-mr-polishetty-142024722-1x1.jpg?VersionId=HZruCKcE34RA4JQCZHkiSgzayLNtS7NY">
+                    <div class="play" onclick="toggleAudio('audio1', 'playButton1')">
+                        <span id="playButton1" class="fa fa-play"></span>
+                    </div>
+                    <h4>Lady Luck</h4>
+                    <p>Karthik</p>
+                    <audio id="audio1" src="songs/[iSongs.info] 03 - Lady Luck.mp3" preload="auto"></audio>
+                </div>
+
+                <div class="item" data-audio-id="audio2">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273e01134a814cb04d4b0fd91ee">
+                    <div class="play" onclick="toggleAudio('audio2', 'playButton2')">
+                        <span id="playButton2" class="fa fa-play"></span>
+                    </div>
+                    <h4>Panja</h4>
+                    <p>Yuvan Shankar Raja</p>
+                    <audio id="audio2" src="songs/Panja-SenSongsMp3.Co.mp3" preload="auto"></audio>
+                </div>
+
+                <div class="item" data-audio-id="audio3">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27325468bf1f0c8e0c532f259b6">
+                    <div class="play" onclick="toggleAudio('audio3', 'playButton3')">
+                        <span id="playButton3" class="fa fa-play"></span>
+                    </div>
+                    <h4>Jai Balayya</h4>
+                    <p>S.S.Thaman..</p>
+                    <audio id="audio3" src="songs/[iSongs.info] 03 - Jai Balayya.mp3" preload="auto"></audio>
+                </div>
+
+                <div class="item" data-audio-id="audio4">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2732624a3e6ebe1b2fb818c85ff">
+                    <div class="play" onclick="toggleAudio('audio4', 'playButton4')">
+                        <span id="playButton4" class="fa fa-play"></span>
+                    </div>
+                    <h4>Jabilli Kosam (Female)</h4>
+                    <p>S.Janaki..</p>
+                    <audio id="audio4" src="songs/Jabilli Kosam (Female) - SenSongsMp3.Co.mp3" preload="auto"></audio>
+                </div>
+
+                <div class="item" data-audio-id="audio5">
+                  <img src="https://i.scdn.co/image/ab67616d0000b2735938dabd023f9ca9f73d2225">
+                  <div class="play" onclick="toggleAudio('audio5', 'playButton5')">
+                      <span id="playButton5" class="fa fa-play"></span>
+                  </div>
+                  <h4>Hrudhayam Jaripe</h4>
+                  <p>Yazin Nizar</p>
+                  <audio id="audio5" src="songs/[iSongs.info] 03 - Hrudhayam Jaripe.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="item" data-audio-id="audio6">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273915c0a9491052bebed419720">
+                  <div class="play" onclick="toggleAudio('audio6', 'playButton6')">
+                      <span id="playButton6" class="fa fa-play"></span>
+                  </div>
+                  <h4>Hukum</h4>
+                  <p>Anirudh Ravichander</p>
+                  <audio id="audio6" src="songs/[iSongs.info] 04 - Hukum.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="item" data-audio-id="audio7">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273cd42c9bdd621e3677e75e9c5">
+                  <div class="play" onclick="toggleAudio('audio7', 'playButton7')">
+                      <span id="playButton7" class="fa fa-play"></span>
+                  </div>
+                  <h4>Komuram Bheemudo</h4>
+                  <p>Kaala Bhairava</p>
+                  <audio id="audio7" src="songs/[iSongs.info] 07 - Komuram Bheemudo.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="item" data-audio-id="audio8">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273dc3c4874fca4c0246bbbdb0e">
+                  <div class="play" onclick="toggleAudio('audio8', 'playButton8')">
+                      <span id="playButton8" class="fa fa-play"></span>
+                  </div>
+                  <h4>Sunona Sunaina</h4>
+                  <p>Rahul Nambiar</p>
+                  <audio id="audio8" src="songs/[iSongs.info] 03 - Sunona Sunaina.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="item" data-audio-id="audio9">
+                <img src="https://i.scdn.co/image/ab67616d0000b27339fe640ab73db368eeac0f90">
+                <div class="play" onclick="toggleAudio('audio9', 'playButton9')">
+                    <span id="playButton9" class="fa fa-play"></span>
+                </div>
+                <h4>Once Upon a Time</h4>
+                <p>Anirudh Ravichander</p>
+                <audio id="audio9" src="songs/[iSongs.info] 05 - Once Upon a Time.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="item" data-audio-id="audio10">
+                <img src="https://i.scdn.co/image/ab67616d0000b273a0fe015a149b402f4e173401">
+                <div class="play" onclick="toggleAudio('audio10', 'playButton10')">
+                    <span id="playButton10" class="fa fa-play"></span>
+                </div>
+                <h4>Ma Ma Mahesha</h4>
+                <p>Jonita Gandhi, Sri Krishna</p>
+                <audio id="audio10" src="songs/Ma Ma Mahesha.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="item" data-audio-id="audio11">
+                <img src="https://i.scdn.co/image/ab67616d0000b27371cc7c112a85908f0192aa70">
+                <div class="play" onclick="toggleAudio('audio11', 'playButton11')">
+                    <span id="playButton11" class="fa fa-play"></span>
+                </div>
+                <h4>Seethakaalam</h4>
+                <p>Yazin Nizar</p>
+                <audio id="audio11" src="songs/Seethakaalam - SenSongsMp3.Co.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="item" data-audio-id="audio12">
+                <img src="https://i.scdn.co/image/ab67616d0000b273617c5e89a28ae7355eea2d01">
+                <div class="play" onclick="toggleAudio('audio12', 'playButton12')">
+                    <span id="playButton12" class="fa fa-play"></span>
+                </div>
+                <h4>Baby Won't You Tell Me</h4>
+                <p> Shankar Mahadevan</p>
+                <audio id="audio12" src="songs/Baby Wont You Tell Me - SenSongsMp3.Co.mp3" preload="auto"></audio>
+            </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="Muzify-playlists1">
+          <h2>Search by artist</h2>
+          <div class="list">
+              <div class="item">
+                <img src="https://i.scdn.co/image/ab67616d0000b273b4d3ba2acf0ed9d1962e7b22">
+                <h4>Ilayaraja</h4>                
+              </div>
+
+              <div class="item">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebb19af0ea736c6228d6eb539c">
+                <h4>A.R.Rahman</h4>
+              </div>
+
+              <div class="item">
+                  <img src="https://i.scdn.co/image/ab67616d00001e024afcaf5579c935a3307bf6ea">
+                  <h4>Sid Sriram</h4>
+              </div>
+
+              <div class="item">
+                <img src="https://i.scdn.co/image/ab67706c0000da8483378732efdd0460555ebbb4">
+                <h4>Anirudh Ravichander</h4>
+              </div> 
+
+              <div class="item">
+                  <img src="https://i.scdn.co/image/ab6761610000e5eb46e7a06fa6dfefaed6a3f0db">
+                  <h4>Shawn Mendes</h4>
+              </div> 
+              
+              <div class="item">
+                <img src="https://i.scdn.co/image/ab67616d0000b273f46b9d202509a8f7384b90de">
+                <h4>Justin Bieber</h4>
+              </div>
+          </div>
+      </div>
+
+        <div class="music-player">
+            <div class="player-controls">
+                <div class="shuffle-button" onclick="toggleShuffle()"><i id="shuffleIcon" class="fas fa-random"></i></div>               
+                <div class="previous-button" onclick="previousAudio()"><i class="fa fa-backward"></i></div>
+                <div class="play-button" onclick="toggleGlobalAudio()"><i id="playButtonGlobal" class="fa fa-play"></i></div>
+                <div class="next-button" onclick="nextAudio()"><i class="fa fa-forward "></i></div>
+                <!-- <i class="far fa-heart" id="likeIcon" onclick="toggleLike()"></i> -->
+                <div class="loop-button" onclick="toggleLoop()"><i id="loopIcon" class="fas fa-retweet"></i></div>
+            </div>
+
+            <div class="song-time">
+                <span id="currentTime">0:00</span>
+                <input type="range" id="seekBar" value="0" step="0.01" onchange="seekAudio()" />
+                <span id="totalTime">0:00</span>
+            </div>
+
+            <div class="volume-control">
+                <i id="soundIcon" class="fas fa-volume-up" onclick="toggleMute()"></i>
+                <input type="range" id="soundSlider" value="100" step="1" onchange="adjustSound()" />
+            </div>
+        </div>
+    </div>
+    <div class="current-song" id="currentSongInfo">
+        <img id="currentSongImage" src="https://i.scdn.co/image/ab67616d0000b27341e31d6ea1d493dd77933ee5" alt="Currently Playing Song" />
+        <div id="currentSongDetails">
+            <p id="currentSongTitle">STAY</p>
+            <p id="currentSongDescription">Justin Bieber</p>
+            <i class="far fa-heart" id="likeIcon" onclick="toggleLike()"></i>
+        </div>
+    </div>
+
+    <div class="next-song">
+        <img id="nextSongImage" src="https://i.scdn.co/image/ab67616d0000b27341e31d6ea1d493dd77933ee5" alt="Next Song" />
+        <div id="nextSongDetails">
+            <p id="nextSongTitle">STAY</p>
+            <p id="nextSongDescription">Justin Bieber</p>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <title>Liked-Songs</title>
+    <link rel="stylesheet" href="style4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+    <div class = "sidebar">
+        <div class="logo">
+          <a href = "#">
+            <img src = "images/Brand Logo.png" alt = "Logo">
+          </a>
+        </div>
+    
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href = "Muzify_songs.html">
+                <span class="fa fa-home"></span>
+                <span>Home</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href = "search.html">
+                <span class="fa fa-search" ></span>
+                <span>Search</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href = "#">
+                <span class="fa fas fa-book"></span>
+                <span>Your Library</span>
+              </a>
+            </li>
+    
+          </ul>
+        </div>
+    
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href = "#">
+                <span class="fa fas fa-plus-square"></span>
+                <span>Create Playlist</span>
+              </a>
+            </li>
+    
+            <li>
+              <a href = "#">
+                <span  style="color: white;font-size: 20px;" class="fa fas fa-heart"></span>
+                <span style="color: white;font-size: 17px;">Liked Songs</span>
+              </a>
+            </li>
+    
+          </ul>
+        </div>
+    
+          <div class="policies">
+            <ul>
+              <li>
+                <a href = "#">Cookies</a>
+              </li>
+    
+              <li>
+                <a href = "#">Privacy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="main-container">
+          <div class="topbar">
+            <div class="prev-next-buttons">
+              <button type="button" class="fa fas fa-chevron-left"></button>
+              <button type="button" class="fa fas fa-chevron-right"></button>
+            </div>
+    
+            <div class="navbar">
+              <ul>
+                <li>
+                  <a href="#">Premium</a>
+                </li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+                <li>
+                  <a href="#">Download</a>
+                </li>
+            </div>
+          </div>
+        <div class="Muzify-playlists">
+            <h2>Liked Songs</h2>
+            <div class="list">
+                <div class="item" data-audio-id="audio1">
+                    <div class="play" onclick="toggleAudio('audio1', 'playButton1')">
+                        <span id="playButton1" class="fa fa-play"></span>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273d4f893fa639b6ae966557a89">
+                    <h4>Tillu Anna DJ Pedithe</h4>
+                    <h6 class="duration" id="duration_audio1">0:00</h6>
+                    <p>Ram Miriyala</p>
+                    <audio id="audio1" src="songs/[iSongs.info] 01 - Tillu Anna DJ Pedithe.mp3" preload="auto"></audio>
+                </div>
+
+                <div class="item" data-audio-id="audio2">                    
+                    <div class="play" onclick="toggleAudio('audio2', 'playButton2')">
+                        <span id="playButton2" class="fa fa-play"></span>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273dd7ea25884f7fbbe8ae59a4b">
+                    <h4>Lingi Lingi Lingidi</h4>
+                    <h6 class="duration" id="duration_audio2">0:00</h6>
+                    <p>Relare Rela Raghu</p>
+                    <audio id="audio2" src="songs/Lingidi Lingidi_128-(WapKing).mp3" preload="auto"></audio>
+                </div>
+
+                <div class="item" data-audio-id="audio3">                    
+                    <div class="play" onclick="toggleAudio('audio3', 'playButton3')">
+                        <span id="playButton3" class="fa fa-play"></span>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273ea5a7ae393a3f8dfe6d53bb5">
+                    <h4>Samayama</h4>
+                    <h6 class="duration" id="duration_audio3">0:00</h6>
+                    <p>Anurag Kulkarni</p>
+                    <audio id="audio3" src="songs/[iSongs.info] 02 - Samayama.mp3" preload="auto"></audio>
+                </div>
+
+                <div class="item" data-audio-id="audio4">                    
+                    <div class="play" onclick="toggleAudio('audio4', 'playButton4')">
+                        <span id="playButton4" class="fa fa-play"></span>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d0000b27360dbbb589dff0c57a3a4ffb2">
+                    <h4>Chaleya</h4>
+                    <h6 class="duration" id="duration_audio4">0:00</h6>
+                    <p>Arijit Singh</p>
+                    <audio id="audio4" src="songs/Chaleya Song.mp3" preload="auto"></audio>
+                </div>
+
+
+                <div class="item" data-audio-id="audio5">
+                  <div class="play" onclick="toggleAudio('audio5', 'playButton5')">
+                      <span id="playButton5" class="fa fa-play"></span>
+                  </div>
+                  <img src="https://i.scdn.co/image/ab67616d0000b27375bd5306fb4669a15ee74eff">
+                  <h4>Stitches</h4>
+                  <h6 class="duration" id="duration_audio5">0:00</h6>
+                  <p>Shawn Mendes</p>
+                  <audio id="audio5" src="songs/Shawn_Mendes_-_Stitches.mp3" preload="auto"></audio>
+              </div>
+              <div class="item" data-audio-id="audio6">                    
+                  <div class="play" onclick="toggleAudio('audio6', 'playButton6')">
+                      <span id="playButton6" class="fa fa-play"></span>
+                  </div>
+                  <img src="https://i.scdn.co/image/ab67616d0000b2735e2d01bb02ce77c1a0dfed3f">
+                  <h4>Kannullo Nee Roopame</h4>
+                  <h6 class="duration" id="duration_audio6">0:00</h6>
+                  <p>Hariharan, K. S. Chithra</p>
+                  <audio id="audio6" src="songs/[iSongs.info] 02 - Kannullo Ne Roopame.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="item" data-audio-id="audio7">                    
+                  <div class="play" onclick="toggleAudio('audio7', 'playButton7')">
+                      <span id="playButton7" class="fa fa-play"></span>
+                  </div>
+                  <img src="https://i.scdn.co/image/ab67616d0000b2739e495fb707973f3390850eea">
+                  <h4>Heat Waves</h4>
+                  <h6 class="duration" id="duration_audio7">0:00</h6>
+                  <p>Glass Animals</p>
+                  <audio id="audio7" src="songs/Heat Waves.mp3" preload="auto"></audio>
+              </div>
+
+              <div class="item" data-audio-id="audio8">                    
+                  <div class="play" onclick="toggleAudio('audio8', 'playButton8')">
+                      <span id="playButton8" class="fa fa-play"></span>
+                  </div>
+                  <img src="https://i.scdn.co/image/ab67616d0000b273f5d5beedc3abc1ee33a4adc4">
+                  <h4>Thangamey</h4>
+                  <h6 class="duration" id="duration_audio8">0:00</h6>
+                  <p>Anirudh Ravichander</p>
+                  <audio id="audio8" src="songs/Thangame-SenSongsMp3.Com.mp3" preload="auto"></audio>
+              </div>
+                
+            </div>
+        </div>
+
+        <div class="music-player">
+            <div class="player-controls">
+                <div class="shuffle-button" onclick="toggleShuffle()"><i id="shuffleIcon" class="fas fa-random"></i></div>               
+                <div class="previous-button" onclick="previousAudio()"><i class="fa fa-backward"></i></div>
+                <div class="play-button" onclick="toggleGlobalAudio()"><i id="playButtonGlobal" class="fa fa-play"></i></div>
+                <div class="next-button" onclick="nextAudio()"><i class="fa fa-forward "></i></div>
+                <!-- <i class="far fa-heart" id="likeIcon" onclick="toggleLike()"></i> -->
+                <div class="loop-button" onclick="toggleLoop()"><i id="loopIcon" class="fas fa-retweet"></i></div>
+            </div>
+            <div class="song-time">
+                <span id="currentTime">0:00</span>
+                <input type="range" id="seekBar" value="0" step="0.01" onchange="seekAudio()" />
+                <span id="totalTime">0:00</span>
+            </div>
+            <div class="volume-control">
+                <i id="soundIcon" class="fas fa-volume-up" onclick="toggleMute()"></i>
+                <input type="range" id="soundSlider" value="100" step="1" onchange="adjustSound()" />
+            </div>
+        </div>
+    </div>
+    <div class="current-song" id="currentSongInfo">
+        <img id="currentSongImage" src="https://i.scdn.co/image/ab67616d0000b27341e31d6ea1d493dd77933ee5" alt="Currently Playing Song" />
+        <div id="currentSongDetails">
+            <p id="currentSongTitle">STAY</p>
+            <p id="currentSongDescription">Justin Bieber</p>
+            <i class="far fa-heart" id="likeIcon" onclick="toggleLike()"></i>
+        </div>
+    </div>
+    <div class="next-song">
+        <img id="nextSongImage" src="https://i.scdn.co/image/ab67616d0000b27341e31d6ea1d493dd77933ee5" alt="Next Song" />
+        <div id="nextSongDetails">
+            <p id="nextSongTitle">STAY</p>
+            <p id="nextSongDescription">Justin Bieber</p>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
+    <script src="script3.js"></script>
+</body>
+</html>
+
+
+
+
+

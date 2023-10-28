@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Muzify – Search</title>
+  <link rel="stylesheet" href="style3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo">
+        <a href = "#">
+            <img src = "images/Brand Logo.png" alt = "Logo">
+        </a>
+        </div>
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href = "Muzify_songs.html">
+                        <span class="fa fa-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                        <a href = "search.html">
+                          <span style="color: white;font-size: 20px;" class="fa fa-search" ></span>
+                          <span style="color: white;font-size: 17px;">Search</span>
+                        </a>
+                </li>
+
+                <li>
+                <a href = "#">
+                    <span class="fa fas fa-book"></span>
+                    <span>Your Library</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navigation">
+            <ul>
+                <li>
+                <a href = "#">
+                    <span class="fa fas fa-plus-square"></span>
+                    <span>Create Playlist</span>
+                </a>
+                </li>
+
+                <li>
+                <a href = "likedsongs.html">
+                    <span class="fa fas fa-heart"></span>
+                    <span>Liked Songs</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="policies">
+            <ul>
+            <li>
+                <a href = "#">Cookies</a>
+            </li>
+
+            <li>
+                <a href = "#">Privacy</a>
+            </li>
+            </ul>
+        </div>
+  </div>
+
+  <div class="main-container">
+    <div class="topbar">
+
+        <div class="prev-next-buttons">
+            <button type="button" class="fa fas fa-chevron-left"></button>
+            <button type="button" class="fa fas fa-chevron-right"></button>
+          </div>
+
+      <div class="search-bar">
+        <div class="search-input">
+          <i class="fa fa-search"></i>
+          <input type="text" id="search-input" placeholder="What do you want to listen to"
+            oninput="searchSongs(this.value)">
+        </div>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="#">Premium</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">Download</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="Muzify-playlists">
+      <h2>Browse all</h2>
+      <div id="search-results" class="search-results">
+        
+      </div>
+      <div class="list">
+
+        <div class="item">
+          <img src="https://i.scdn.co/image/ab67706c0000da84684393f36054c2a7edcf6fc5">
+        </div>
+
+        <div class="item">
+          <img src="https://i.scdn.co/image/ab67706c0000da849f737552d8b55bd7b57bda82">
+        </div>
+
+        <div class="item">
+          <img src="https://i.scdn.co/image/ab67706f0000000244974902f0d4e2f4613bc3b0">
+        </div>
+
+        <div class="item">
+          <img src="https://i.scdn.co/image/ab67616d0000b2736192c10d5f6f8fbbc09d6e80">
+        </div>
+
+        <div class="item">
+          <img src="https://i.scdn.co/image/ab67706f00000002ccd0d6170bb5d56a78ff8d3e">
+        </div>
+
+        <div class="item">
+          <img src="https://i.scdn.co/image/ab67706c0000da8469ec8b5b03df1a6dfe45abf3">
+        </div>
+
+        <div class="item">
+          <img src="https://i.scdn.co/image/ab67706c0000da84cd21ec42a5320033c1bd23f1">
+        </div>
+
+        <div class="item">
+          <img src="https://i.scdn.co/image/ab67706f00000002a3f5a581c4e8cd229b132556">
+        </div>
+
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f0000000234679f602b01dd5375e161fd">
+        </div>
+  
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67706c0000da84359afbe8676368790a35c4c2">
+        </div>
+  
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67706c0000da8481b02b2a589b6fd6284c1054">
+        </div>
+  
+        <div class="item">
+            <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/32766/images/1kC6tv5YSrZGZ856fAvp_2.jpg">
+        </div>
+  
+        <div class="item">
+            <img src="https://assets1.sharedplaylists.cdn.crowds.dk/playlists/27/99/34/sz300x300_todays-top-hits-7cc8b942da.jpeg">
+        </div>
+
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f00000002008092db062ae57983ed0141">
+        </div>
+
+        
+
+
+        <div class="item">
+          <img src="https://i.scdn.co/image/ab67706f0000000231e3e8f8f3811395af76cb06">
+        </div>
+
+        <div class="item">
+            <img src="https://seeded-session-images.scdn.co/v1/img/artist/7L0g7U9E5yf6yZeTNGhVOv/en">
+        </div>
+  
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f0000000232fa3f26c169600e0b88749e">
+        </div>
+  
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f00000002739f228f92c6a66c66de2b16">
+        </div>
+  
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f000000021db2dfdf5b2d60b5605fbe3d">
+        </div>
+  
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f00000002b94bb5fca9c714dde1c27d13">
+        </div>
+
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f00000002a05b235e4a5b45e2b7e5a1b2">
+        </div>
+
+
+        <div class="item">
+          <img src="https://i.scdn.co/image/ab67706c0000da845122ea94576bd08542c40a43">
+        </div>
+
+        <div class="item">
+            <img src="https://assets.rbl.ms/18698679/origin.jpg">
+        </div>
+
+        <div class="item">
+            <img src="https://i.scdn.co/image/ab67706f00000002251df2e1a118d0b3802ebd7c">
+        </div>          
+      </div>
+    </div>
+
+    <div class="list-hidden">
+      
+    </div>
+
+    <p class="search-message" id="search-message">Sorry, no matching results.</p>
+  </div>
+
+  <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
+  <script src="script2.js"></script>
+</body>
+
+</html>
